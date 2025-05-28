@@ -1,0 +1,15 @@
+want to compare (using wakplot_compare.py) a renormalized FeTe.spagetti.ene 
+with DMFT eigvals.dat without broadening
+
+location: /scratch1/09369/clj00009/projects/WVU/LianLi/ML_STO_FeTe/bulk_FeTe_STO_strained/FeTe/MGXM/FeTe
+wakplot_compare in Frontera in plotting scipts
+
+step 1. obtain .energy .output1 from DFT and eigvals.dat from -20 ev to 20 ev from DMFT
+step 2. copy those files to this directory.
+step 3.  1-find...
+step 4. 2-mod...
+step 5. copy the "modified" files to the "x spagetti" folder 
+
+
+
+
