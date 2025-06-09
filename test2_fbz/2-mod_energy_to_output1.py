@@ -21,7 +21,7 @@ def process_file_to_dataframe(file_path):
             if len(parts) >= 6:
                 try:
                     # Extract the band count from the 5th number
-                    band_count = int(parts[4])  # The 5th number is the band count (need to make dynamic)
+                    band_count = int(parts[5])  # The 5th number is the band count (need to make dynamic)
                     
                     # If we haven't set the band_columns yet, set them dynamically based on the band count
                     if band_columns is None:
@@ -57,7 +57,7 @@ def process_file_to_dataframe(file_path):
     
     return df
 
-file_path = 'FeSe_modified.energy'  # Replace with the actual file path
+file_path = 'wannier_modified.energy'  # Replace with the actual file path
 
 df_DFT = process_file_to_dataframe(file_path)
 
@@ -68,7 +68,7 @@ print(df_DFT.head())
 count = 0
 output_lines = []
 
-with open("FeSe.output1", "r") as file:
+with open("wannier.output1", "r") as file:
     lines = file.readlines()
 
 i = 0
@@ -128,7 +128,7 @@ while i < len(lines):
     i += 1
 
 # Write to a new file
-with open("FeSe.output1_modified", "w") as f_out:
+with open("wannier.output1_modified", "w") as f_out:
     f_out.writelines(output_lines)
 
 

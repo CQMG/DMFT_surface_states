@@ -21,7 +21,7 @@ def process_file_to_dataframe(file_path):
             if len(parts) >= 6:
                 try:
                     # Extract the band count from the 5th number
-                    band_count = int(parts[4]) # The 5th number is the band count (need to make dynamic)
+                    band_count = int(parts[5]) # The 5th number is the band count (need to make dynamic)
                     
                     # If we haven't set the band_columns yet, set them dynamically based on the band count
                     if band_columns is None:
@@ -123,7 +123,7 @@ df_DMFT, num_of_DMFT_bands, min_DMFT_band = parse_self_energy_file("eigvals.dat"
 
 
 # Example usage
-file_path = 'FeSe.energy'  # Replace with the actual file path
+file_path = 'wannier.energy'  # Replace with the actual file path
 
 df_DFT = process_file_to_dataframe(file_path)
 print(df_DFT)
@@ -153,7 +153,7 @@ import numpy as np
 import pandas as pd
 
 
-output_path = 'FeSe_modified.energy'
+output_path = 'wannier_modified.energy'
 
 # Assume df_DFT_relates_to_DMFT and df_DMFT are preloaded
 
