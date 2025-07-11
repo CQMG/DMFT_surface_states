@@ -1,0 +1,1 @@
+A script that replaces the eigenvalues in case.energy and case.output1 from wien2k with "DMFT eigvenvalue" from Halue's implementation of DFT + eDMFT (under the assumption the imaginary part of the self energy on the real axis goes to zero).
