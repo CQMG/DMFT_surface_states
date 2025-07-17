@@ -57,7 +57,7 @@ def process_file_to_dataframe(file_path):
     
     return df
 
-file_path = 'FeSe_modified.energy'  # Replace with the actual file path
+file_path = 'FeSe.energy_modified'  # Replace with the actual file path
 
 df_DFT = process_file_to_dataframe(file_path)
 
